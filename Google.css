@@ -1,0 +1,100 @@
+body{
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 0.9em; /*0.9em means 90% of the original size*/
+}
+a{
+  margin : 5px;
+  text-decoration : none;
+  color : black;
+}
+a:hover{
+  text-decoration : underline;
+}
+nav {
+  display : flex;
+  justify-content : space-between;
+}
+ul > a, ul > img{
+  padding: 8px 8px;
+}
+
+@font-face{
+  font-family : 'Product sans';
+  font-style : 'normal';
+  font-weight : 400;
+  src : url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+h1 {
+  font-family : Product sans;
+  font-size : 6em;
+}
+
+section {
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  margin-top: 5vh;
+}
+
+.my-input-container{
+  display : flex;
+  justify-content: space-between;
+  width : 60vw;
+  height : 38px;
+  border: 1px solid gainsboro;
+  border-radius : 20px;
+}
+
+.my-input-container:hover{
+  box-shadow : 0 0 10px 0 gainsboro;
+}
+
+.my-input-container > img{
+  padding-top : 5px;
+  padding-left :5px;
+  padding-right : 5px;
+}
+
+.my-input-container > img:hover{
+  cursor : pointer;
+}
+
+.mic{
+  margin-top : 5px;
+  margin-bottom : 10px;
+  margin-right : 5px;
+}
+
+.my-input-container > input{
+  flex-grow : 1;
+  outline : none;
+  border : none;
+}
+
+.my-button-container {
+  padding-top : 53px;
+}
+
+.my-button-container > button{
+  background-color : #F8F9FA;
+  border-radius : 5px;
+  border : none;
+  height : 36px;
+  padding : 0 20px;
+  margin : 0 4px;
+}
+
+.my-button-container > button:hover {
+  cursor : pointer;
+}
+
+footer{
+  display : flex;
+  background-color : #F2F2F2;
+  position : fixed;
+  bottom : 0;
+  width : 100vw;
+  justify-content : space-between;
+}
